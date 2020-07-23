@@ -1,2 +1,2 @@
-# calculator-icha.github.io
+# calculator.github.io
 Proyek mandiri
