@@ -61,7 +61,7 @@ const calculate = () => {
       break
     case "*":
       result = parseFloat(prevNumber) * parseFloat(currentNumber)
-      breakparseFloat
+      break
     case "/":
       result = parseFloat(prevNumber) / parseFloat(currentNumber)
       break
@@ -104,4 +104,16 @@ const percentage = document.querySelector('.percentage')
 percentage.addEventListener('click', () => {
   currentNumber /= 100;
   updateScreen(currentNumber)
+})
+
+const del = document.querySelector(".delete");
+
+del.addEventListener("click", () => {
+  if (currentNumber !== "0" && currentNumber.length !== 1) {
+    currentNumber = currentNumber.slice(0, currentNumber.length - 1);
+  } else {
+    currentNumber = "0";
+  }
+
+  updateScreen(currentNumber);
 })
