@@ -30,16 +30,16 @@ button {
   background-color: #5D8AA8;
   border: 1px solid black;
   font-size: 32px;
-  color: #FFFFFF;
+  color: 	#FFFFFF;
   width: 25%;
   outline: none;
 }
 
-.all-clear, .zero-btn {
+.all-clear {
   width: 50%;
 }
 
-.operator, equal-sign {
+.operator, .equal-sign {
   background-color: #FFC72C;
 }
 
